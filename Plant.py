@@ -1,6 +1,7 @@
 class Plant:
-    def __init__(self, name):
+    def __init__(self, name, type):
         self.name = name
+        self.type = type
 
     def leaf(self, leaves):
         self.leaves = leaves
@@ -8,11 +9,10 @@ class Plant:
         print(f" My leaves are: {self.leaves}")
 
     def color(self, color="green"):
-        # self.color = color
-        print(f"When I bloom my {self.leaves} leafs are {self.color} ")
+        print(f"When I bloom my {self.leaves} leafs are {color} ")
 
 
-k = Plant("Lily")
+k = Plant("Lily", "female")
 k.leaf("long")
 k.color("yellow")
 # print(__dict.Plant())
