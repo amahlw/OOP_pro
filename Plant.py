@@ -1,8 +1,18 @@
-class Head:
-    def shake_head(self, name="kev"):
+class Plant:
+    def __init__(self, name):
         self.name = name
-        print(f"i love you {self.name}")
+
+    def leaf(self, leaves):
+        self.leaves = leaves
+
+        print(f" My leaves are: {self.leaves}")
+
+    def color(self, color="green"):
+        # self.color = color
+        print(f"When I bloom my {self.leaves} leafs are {self.color} ")
 
 
-k = Head()
-k.shake_head()
+k = Plant("Lily")
+k.leaf("long")
+k.color("yellow")
+# print(__dict.Plant())
