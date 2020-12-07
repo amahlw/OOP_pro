@@ -1,19 +1,25 @@
+import random
+
+
 class Plant:
-    def __init__(self, name, species):
+    def __init__(self, name, gender):
         self.name = name
-        self.species = species
+        self.gender = gender
 
     def leaf(self, leaves):
+        leaves_list = ["long", "short", "wide",
+                       "round", "odd", "long_wide", "short_long"]
         self.leaves = leaves
-
-        print(f" My leaves are: {self.leaves}")
+        kj = random.choice(leaves_list)
+        # jon = any(leaves_list)
+        for i in kj:
+            print(i, end="")
 
     def color(self, color="green"):
-        print(f"When I bloom my {self.leaves} leafs are {color} ")
-        food = ["rice", "meat", "bread"]
-
-        for i in range(3):
-            print(food[i], end=" "),
+        foodz = ["Beez", "Flyz", "Catapillar", "Butterflies"]
+        mj = random.choice(foodz)
+        for i in mj:
+            print(i, end="")
 
 
 k = Plant("Lily", "female")

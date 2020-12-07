@@ -2,12 +2,13 @@ from Plant import Plant
 
 
 class Flower(Plant):
-    def __init__(self, name, type, petals, buds):
-        super().__init__(name, type)
+
+    def __init__(self, name, gender, petals, buds):
+        super().__init__(name, gender)
         self.petals = petals
         self.buds = buds
         print(
-            f"I am a {self.name} which is a {self.type} with {self.petals} petals and {self.buds} buds")
+            f"I am a {self.name} which is a {self.gender} with {self.petals} petals and {self.buds} buds")
 
     def leaf(self, leaves):
         self.leaves = leaves
