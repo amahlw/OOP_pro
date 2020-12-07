@@ -11,3 +11,7 @@ class MyClass:
 k = MyClass()
 # k.Greeting("kik", "minn")
 k.SayHello()
+
+
+def __str__(self):
+    return f"{self.name} (quantity: {self.quantity})"
