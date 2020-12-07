@@ -1,4 +1,5 @@
 from Tree import Tree
+import random
 
 
 class Garden:
@@ -15,6 +16,11 @@ class Garden:
         new_tree = Tree(name, gender, species, height)
         self.plants.append(new_tree)
 
+    def plant_kingdom(self):
+        kingdom = ["Mosses/Liverworts", "Ferns", "Gymnosperms", "Angiosperms"]
+        p_k = random.choice(kingdom)
+        print(p_k)
+
 
 kin = Garden("joey")
 kin.soil()
@@ -22,6 +28,8 @@ kin.soil()
 
 kin.add_tree("ki", "male", "oak", "98")
 print(kin.plants)
+kin.plant_kingdom()
+print(kin.plant_kingdom)
 
 # random_value = random.randint(0, self.max_damage)
 #         return random_value
