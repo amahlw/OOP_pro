@@ -2,8 +2,16 @@ import random
 
 
 class Plant:
+
+    # ex
+
+    # make class methods to use in methods as well
+
     def __init__(self, name, gender):
-        self.name = name
+        # private ex __  protected ex: _
+        # also explain why att are pub,priv,prot
+
+        self._name = name
         self.gender = gender
 
     def leaf(self, leaves):
@@ -12,16 +20,15 @@ class Plant:
         self.leaves = leaves
         kj = random.choice(leaves_list)
         # jon = any(leaves_list)
-        for i in kj:
-            print(i, end="")
+        print(kj)
 
     def color(self, color="green"):
         foodz = ["Beez", "Flyz", "Catapillar", "Butterflies"]
         mj = random.choice(foodz)
-        for i in mj:
-            print(i, end="")
+        print(mj)
 
 
+#  instantiate
 k = Plant("Lily", "female")
 k.leaf("long")
 k.color("yellow")
