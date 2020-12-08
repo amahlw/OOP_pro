@@ -3,6 +3,8 @@ import random
 
 
 class Garden:
+    soil = True
+    
     def __init__(self, name):
         self.name = name
         self.plants = []

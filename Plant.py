@@ -4,7 +4,8 @@ import random
 class Plant:
 
     # ex
-
+    needs_shadow = photosynthesis()
+    roots = true 
     # make class methods to use in methods as well
 
     def __init__(self, name, gender):
@@ -14,6 +15,8 @@ class Plant:
         self._name = name
         self.gender = gender
 
+
+# instance methods
     def leaf(self, leaves):
         leaves_list = ["long", "short", "wide",
                        "round", "odd", "long_wide", "short_long"]
