@@ -7,6 +7,8 @@ import random
 class Garden:
 
     soil_level = 100
+    # add another class att 
+
 
     def __init__(self, name, gender):
         self.name = name,
@@ -28,6 +30,7 @@ class Garden:
 
     def plant_kingdom(self):
         kingdom = ["Mosses/Liverworts", "Ferns", "Gymnosperms", "Angiosperms"]
+        # maybe add Soil_type
         p_k = random.choice(kingdom)
         print(p_k)
 
