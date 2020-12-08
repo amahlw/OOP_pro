@@ -18,7 +18,11 @@ class Flower(Plant):
     def color(self, color="green"):
         return (f"When I bloom i have {self.leaves} {color} leafs ")
 
+    def is_healthy(self):
+        print(f"The flowers are blooming! 🌸🌸🌸")
 
-ji = Flower("sunflower", "female", "yes", "orange")
-ji.leaf("long")
-ji.color("purple")
+
+# ji = Flower("sunflower", "female", "yes", "orange")
+# ji.leaf("long")
+# ji.color("purple")
+# ji.is_healthy()
