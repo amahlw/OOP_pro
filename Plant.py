@@ -2,8 +2,12 @@ import random
 
 
 class Plant():
+    leaves_list = ["long", "short", "wide",
+                   "round", "odd", "long_wide", "short_long"]
+    foodz = ["Beez", "Flyz", "Catapillar", "Butterflies"]
 
     # ex
+    # don't forget to add class att 1 or 2
 
     # make class methods to use in methods as well
 
@@ -17,22 +21,20 @@ class Plant():
 
 # instance methods
 
+
     def leaf(self, leaves):
-        leaves_list = ["long", "short", "wide",
-                       "round", "odd", "long_wide", "short_long"]
+
         self.leaves = leaves
-        kj = random.choice(leaves_list)
+        kj = random.choice(Plant.leaves_list)
         # jon = any(leaves_list)
         print(kj)
 
     def color(self, color="green"):
-        foodz = ["Beez", "Flyz", "Catapillar", "Butterflies"]
-        mj = random.choice(foodz)
+
+        mj = random.choice(Plant.foodz)
         print(mj)
 
 
 #  instantiate
-k = Plant("Lily", "female")
-k.leaf("long")
-k.color("yellow")
+
 # print(__dict.Plant())

@@ -16,7 +16,7 @@ class Garden:
 
         print(f"welcome to my harvest {self.name}")
 
-    @ classmethod
+    @classmethod
     def garden_soil(cls, amount):
         cls.soil_level -= int(amount)
 
