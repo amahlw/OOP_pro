@@ -7,8 +7,7 @@ import random
 class Garden:
 
     soil_level = 100
-    # add another class att 
-
+    # add another class att
 
     def __init__(self, name, gender):
         self.name = name,
