@@ -21,12 +21,10 @@ class Plant():
 
 # instance methods
 
+    def leaf(self):
 
-    def leaf(self, leaves):
-
-        self.leaves = leaves
+        # self.leaves = leaves
         kj = random.choice(Plant.leaves_list)
-        # jon = any(leaves_list)
         print(kj)
 
     def color(self, color="green"):
@@ -37,4 +35,6 @@ class Plant():
 
 #  instantiate
 
-# print(__dict.Plant())
+tony = Plant("lily", 30)
+tony.leaf()
+tony.color()
